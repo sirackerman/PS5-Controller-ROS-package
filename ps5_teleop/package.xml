@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ps5_teleop</name>
+  <version>0.0.0</version>
+  <description> ROS package for controlling robots using a PS5 DualSense controller</description>
+ 
+ <maintainer email="arianodacons@gmail.com">ariano</maintainer>
+ <maintainer email="your_email@example.com">Your Name</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>rospy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>joy</depend>
+  <depend>teleop_twist_joy</depend>
+
+  <export>
+  </export>
+</package>
+
