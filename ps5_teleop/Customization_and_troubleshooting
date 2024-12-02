@@ -1,0 +1,60 @@
+### Speed Settings
+You can modify the speed settings in the launch file `~/catkin_ws/src/ps5_teleop/launch/ps5_teleop.launch`:
+
+```xml
+<param name="scale_linear" value="0.3" />     <!-- Normal linear speed -->
+<param name="scale_angular" value="0.6" />    <!-- Normal angular speed -->
+<param name="scale_linear_turbo" value="0.6" />  <!-- Turbo linear speed -->
+```
+
+### Button Mapping
+The default button mappings for the PS5 controller are:
+```
+D-pad:
+- Up arrow: axis 7 value 1
+- Down arrow: axis 7 value -1
+- Left arrow: axis 6 value 1
+- Right arrow: axis 6 value -1
+
+Buttons:
+- L1 (Enable): button 4
+- L2 (Turbo): button 6
+
+Other Buttons (for reference):
+- L3: button 10
+- R1: button 5
+- R2: button 7
+- R3: button 11
+- Triangle: button 3
+- Square: button 0
+- Cross: button 1
+- Circle: button 2
+- Share: button 8
+- Options: button 9
+- PS button: button 12
+- Touchpad: button 13
+```
+
+If your controller has different mappings, you can check them using:
+```bash
+rosrun joy joy_node
+rostopic echo /joy
+```
+
+Then update the parameters in the launch file accordingly.
+
+
+### Robot Not Moving
+1. Verify cmd_vel messages are being published:
+```bash
+rostopic echo /cmd_vel
+```
+
+2. Check that your robot is subscribing to /cmd_vel:
+```bash
+rostopic info /cmd_vel
+```
+
+3. Ensure the enable button (L1) is pressed while trying to move
+
+

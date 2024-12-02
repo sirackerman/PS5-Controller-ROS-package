@@ -1,0 +1,35 @@
+right stick:
+up axis 5 value 1
+down axis 5 value -1
+right axis 2 value -1
+left axis 2 value 1
+
+left stick:
+up axis 1 value 1
+down axis 1 value -1
+right axis 0 value -1
+left axis 0 value 1
+
+L1: button 4
+l2: button 6
+l3: button 10
+
+R1:button 5
+r2: button 7
+r3: button 11
+
+up arrow: axis 7 value 1
+down arrow: axis 7 value -1
+left arrow: axis 6: value 1
+right arrow: axis 6: value -1
+
+bluetooth button: button 8
+option button: button 9
+pad button:button 13
+ps button: button 12
+axis 3 and 4 are always 1 and dont match with any button 
+
+triangle:button 3
+square: button 0
+cross: button 1
+circle: button 2
