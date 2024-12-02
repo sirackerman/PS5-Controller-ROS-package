@@ -22,5 +22,6 @@
     <param name="scale_linear_turbo" value="0.6" />
     <param name="enable_button" value="4" />
     <param name="enable_turbo_button" value="6" />
+    <remap from="cmd_vel" to="cmd_vel" />
   </node>
 </launch>
